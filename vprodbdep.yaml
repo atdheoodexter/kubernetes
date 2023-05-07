@@ -18,7 +18,7 @@ spec:
         - name: vprodb
           image: dexterlaboratory/vprofiledb-mysql:V1
           args:
-            - ignore-db-dir=lost+found"
+            - "--ignore-db-dir=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
@@ -38,7 +38,6 @@ spec:
           awsElasticBlockStore:
             volumeID: vol-02296df024e8fae7e
             fsType: ext4
-
 
 
 

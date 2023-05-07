@@ -38,8 +38,3 @@ spec:
           awsElasticBlockStore:
             volumeID: vol-02296df024e8fae7e
             fsType: ext4
-
-
-
-
-    
